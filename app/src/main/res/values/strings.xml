@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LezioneConstraintLayout</string>
+    <string name="titolo_pagina_bias">Titolo pagina bias</string>
+    <string name="stella">stella</string>
+    <string name="esempio_testo">Esempio testo</string>
+    <string name="esempio_testo_lungo">Esempio di testo molto più lungo di quello precedente</string>
+</resources>
