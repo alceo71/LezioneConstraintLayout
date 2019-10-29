@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    tools:context=".Placeholder1Activity">
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/placeholder"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/giove"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nettuno"
+        app:layout_constraintEnd_toStartOf="@+id/nettuno"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="cambiaView"
+        app:srcCompat="@drawable/ic_giove" />
+
+    <ImageView
+        android:id="@+id/nettuno"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/urano"
+        app:layout_constraintEnd_toStartOf="@+id/urano"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/giove"
+        android:onClick="cambiaView"
+        app:srcCompat="@drawable/ic_nettuno" />
+
+
+    <ImageView
+        android:id="@+id/urano"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/venere"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nettuno"
+        android:onClick="cambiaView"
+        app:srcCompat="@drawable/ic_urano" />
+
+    <ImageView
+        android:id="@+id/venere"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/urano"
+        android:onClick="cambiaView"
+        app:srcCompat="@drawable/ic_venere" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
